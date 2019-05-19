@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="row">
+    	<div style="margin: 20vh auto; width: 500px;">
+    		<mat-card>
+    			<h1>Login</h1>
+    			
+    				<form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    					<div class="example-container">
+							<mat-form-field>
+								<input matInput formControlName="username" placeholder="Username" required>
+							</mat-form-field>
+							<mat-form-field>
+								<input matInput formControlName="password" type="password" placeholder="Password" required>
+							</mat-form-field>
+							<button mat-button color="primary" type="submit">Submit</button>
+						</div>
+    				</form>
+    		</mat-card>
+    	</div>
+    </div>
+</div>
